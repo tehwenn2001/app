@@ -1,0 +1,288 @@
+
+
+
+
+MainExample2:
+
+
+
+
+
+
+
+
+
+
+
+        
+<MainExample>:
+    cols:3
+    row:5
+    
+    canvas.before:
+        
+        Rectangle:
+            size:self.size
+            source:"images/cake2.jpg"
+    Label:
+        size_hint: 0.1,0.1
+        
+        text:" "
+    Label:
+        size_hint: 1,0.1
+        
+        text:" "
+    Label:
+        size_hint: 0.1,0.1
+        
+        text:" "
+    Label:
+        size_hint: 0.1,1
+        
+        text:" "
+    GridLayoutExampletop:
+        size_hint: 1,1
+        
+        text:" "
+    Label:
+        size_hint: 0.1,0.1
+        
+        text:" "
+    Label:
+        size_hint: 0.1,0.8
+        
+        text:" "
+    GridLayoutExamplemid:
+        size_hint: 1,0.8
+        
+        text:"8"
+    Label:
+        size_hint: 0.1,0.8
+        
+        text:" "
+    Label:
+        size_hint: 0.1,1
+        
+        text:" "
+      
+    GridLayoutExamplebtm:
+        disabled: root.parent.buttondisabledstate
+        size_hint: 1,1
+        
+        text:"11"
+    Label:
+        size_hint: 0.1,1
+    
+        text:" "
+    Label:
+        size_hint: 0.1,0.2
+        
+        text:" "
+    Button: 
+        disabled: root.parent.buttondisabledstate
+        size_hint: 1,0.2
+        on_press: root.number0()
+        text:"0"
+    Label:
+        size_hint: 0.1,0.2
+        
+        text:" "
+    Label:
+        size_hint: 0.1,0.3
+        
+        text:" "
+    Label:
+        size_hint: 1,0.3
+        
+        text:" "
+    Label:
+        size_hint: 0.1,0.3
+        
+        text:" "
+
+
+
+
+   
+
+<BoxLayoutExample>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<GridLayoutExampletop>:
+
+    cols:3
+    Label:
+        color: 1,0,0
+        size_hint: 1,1
+        font_size: dp(70)
+
+        text: root.parent.minvalue
+    Label:          
+        color: 1,0,0
+        size_hint: 0.5,1
+        font_size: dp(40)
+
+        text:"till"
+    Label:
+        color: 1,0,0
+        size_hint: 1,1
+        font_size: dp(70)
+
+        text:root.parent.maxvalue
+
+
+
+
+
+
+<GridLayoutExamplemid>:
+    cols:3
+    Label:
+        color: 0,1,0
+       
+        font_size: dp(50)
+      
+       
+        text: root.parent.text_input_str1
+    Label:
+        color: 0,1,0
+        font_size: dp(50)
+    
+     
+        text: root.parent.text_input_str2
+    Label:
+        color: 0,1,0
+     
+        font_size: dp(50)
+        
+        
+        text: root.parent.text_input_str3
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<GridLayoutExamplebtm>:
+    cols:4
+    row:3
+
+    Button: 
+       
+        text:"1"
+        on_press: root.parent.number1()
+    Button:
+        size_hint: 1,1
+        
+        text:"2"
+        on_press: root.parent.number2()
+    Button:
+        size_hint: 1,1
+  
+        text:"3"
+        on_press: root.parent.number3()
+    Button:
+        size_hint: 1,1
+       
+        text:"back"
+        on_press: root.parent.back()
+    Button:
+        size_hint: 1,1
+        on_press: root.parent.number4()
+        text:"4"
+    Button:
+        size_hint: 1,1
+        on_press: root.parent.number5()
+        text:"5"
+    Button:
+        size_hint: 1,1
+        on_press: root.parent.number6()
+        text:"6"
+    Button:
+        size_hint: 1,1
+        on_press: root.parent.rand()
+        text:"rand"
+    Button:
+        size_hint: 1,1
+        on_press: root.parent.number7()
+        text:"7"
+    Button:
+        size_hint: 1,1
+        on_press: root.parent.number8()
+        text:"8"
+    Button:
+        size_hint: 1,1
+        on_press: root.parent.number9()
+        text:"9"
+    Button:
+        size_hint: 1,1
+        on_press: root.parent.enter()
+        text:"enter"
+
+    
+    
+
+    
+    
+        
+
+
+<BoxLayoutMenu>:
+    opacity:root.parent.opacitystate
+   
+    canvas.before:
+        
+        Rectangle:
+            
+            size:self.size
+            source:root.parent.changeimage
+            pos: self.pos
+            
+    Button:
+        text: root.parent.menu_button_title
+        size_hint:1,0.1
+        disabled: root.parent.disabledstate
+        on_press: root.on_menu_button_pressed()
+
+<MainExample2>:
+    MainExample:
+    BoxLayoutMenu:
+
+ 
+
+
+
+
+
+
+
+
+
+   
+    
+    
+    
+    
+  
+
+
